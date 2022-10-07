@@ -1,0 +1,25 @@
+{
+  "name": "dojo-cypress-ambevtech",
+  "version": "1.0.0",
+  "description": "Treinamento com cypress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mardedomingo/dojo-cypress-ambevtech.git"
+  },
+  "author": "Mar Domingos Soares",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mardedomingo/dojo-cypress-ambevtech/issues"
+  },
+  "homepage": "https://github.com/mardedomingo/dojo-cypress-ambevtech#readme",
+  "devDependencies": {
+    "cypress": "^10.9.0"
+  },
+  "dependencies": {
+    "faker-br": "^0.4.1"
+  }
+}
