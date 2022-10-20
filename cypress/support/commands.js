@@ -29,3 +29,18 @@ Cypress.Commands.add('login', (email, password) => {
     cy.get('input[type="password"]').type(password);
     cy.get('input[type="submit"]').click({ force: true });
 });
+
+import user from "../fixtures/user.json";
+
+Cypress.Commands.add('token', () => {
+    cy.request({
+        method: 'POST',
+        url: 'api/auth',
+        body: {
+            "email": user.email,
+            "password": user.password
+        }
+    }).then((response) => {
+        return response.body.jwt;
+    })
+})
